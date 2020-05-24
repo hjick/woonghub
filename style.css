@@ -1,0 +1,331 @@
+body {
+  background-color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+.navbar-top {
+  height: 22px;
+  vertical-align: middle;
+  margin: 0 1.5rem;
+}
+.navbar-top a {
+  display: inline-block;
+  color: #bbbbbb;
+  padding: 6px 24px 5px;
+  font-size: 11px;
+}
+.logo {
+  width: 175px;
+  height: 60px;
+  cursor: pointer;
+}
+.mainMenu {
+  background-color: #1b1b1b;
+  display: grid;
+  grid-template-rows: 60px 40px;
+}
+.mainMenu-top {
+  display: grid;
+  grid-template-columns: 220px 1fr 250px 220px;
+  gap: 10px;
+  margin: 0 1.5rem;
+  justify-items: center;
+  align-items: center;
+  border-bottom: 1px solid #242424;
+}
+.mainMenu-bottom {
+  display: grid;
+  border-bottom: 1px solid #1b1b1b;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.mainMenu-bottom span {
+  font-size: 0.7rem;
+  text-align: center;
+  font-weight: 700;
+  width: 80%;
+  cursor: pointer;
+}
+.mainMenu-bottom span i {
+  margin-left: 5px;
+  font-size: 0.8rem;
+}
+.underLine {
+  width: 100%;
+  background-color: #f90;
+  display: block;
+  height: 2px;
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+}
+.searchbar {
+  padding: 6px 0;
+  justify-self: stretch;
+  display: grid;
+  grid-template-columns: 7fr minmax(52px, 1fr) minmax(48px, 1fr);
+  width: 100%;
+}
+.btn-search {
+  display: inline-block;
+  background-color: #ff9900;
+  border-radius: 0 3px 3px 0;
+  color: #000;
+  height: 26px;
+  cursor: pointer;
+  text-align: center;
+}
+.btn-search i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-top: 5px;
+}
+.btn-cam {
+  display: inline-block;
+  background-color: #363636;
+  height: 26px;
+  width: 100%;
+  color: #acabab;
+  text-align: center;
+  cursor: pointer;
+}
+.btn-cam i {
+  margin-top: 5px;
+  padding-left: 5px;
+}
+.mainMenu-top input {
+  background-color: #363636;
+  padding: 2px 5px;
+  border: none;
+  line-height: 19.5px;
+  font-size: 0.8rem;
+  padding-top: 5px;
+  border-radius: 3px 0 0 3px;
+  width: 100%;
+}
+.btn-up-up {
+  justify-self: start;
+}
+.btn-upload {
+  display: inline-block;
+  color: #acacac;
+  font-size: 12px;
+  background-color: #2f2f2f;
+  margin: 0 6px 0 8px;
+  padding: 6px 10px;
+  width: 75px;
+  height: 26px;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-upload i {
+  margin-right: 5px;
+}
+.btn-upgrade {
+  display: inline-block;
+  background-color: #ffa31a;
+  font-size: 12px;
+  color: #000;
+  border-radius: 5px;
+  height: 26px;
+  padding: 6px 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-upgrade i {
+  margin-right: 5px;
+}
+.mainMenu-top a {
+  color: #cccccc;
+  font-size: 0.8rem;
+}
+.loginsign {
+  display: inline-block;
+  justify-items: end;
+}
+
+/* Main Content  */
+
+.mainContentContainer {
+  margin: 0.6rem 7rem;
+}
+.welcome {
+  margin: 0.5rem 3.2rem 0.1rem;
+  padding: 0.6rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.welcome strong {
+  color: #ff9900;
+  font-weight: 700;
+  cursor: pointer;
+}
+.welcome span {
+  color: #ff9900;
+  cursor: pointer;
+}
+.welcome strong:hover,
+.welcome span:hover {
+  text-decoration: underline;
+}
+.welcome i {
+  font-size: 0.7rem;
+  color: #ff9900;
+  cursor: pointer;
+}
+.sectionTitle {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.sectionTitle .sectionHeader {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.sectionTitle .sectionHeader-right {
+  font-size: 0.9rem;
+  color: #7c7c7c;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mainContentsGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 250px 250px 250px;
+  grid-row-gap: 50px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin-bottom: 12rem;
+  padding: 1.25rem 0;
+}
+.mainContentsGrid2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 250px 250px;
+  grid-row-gap: 50px;
+  grid-column-gap: 10px;
+  height: 100vh;
+
+  padding: 1.3rem 0 0;
+}
+.picContainer {
+  height: 100%;
+  position: relative;
+}
+.picContainer .pic {
+  position: relative;
+  display: grid;
+}
+.picContainer img {
+  height: 200px;
+  justify-self: center;
+  width: auto;
+}
+.picContainer img:hover,
+.picTitle span:hover,
+.picAuthor span:hover {
+  cursor: pointer;
+}
+.picTitle span:hover,
+.picAuthor span:hover {
+  color: #f90;
+}
+.picContainer .picText {
+  margin-top: 4px;
+  line-height: 17px;
+}
+.picContainer .picTitle {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 6px;
+  color: #c6c6c6;
+}
+.picContainer .picAuthor {
+  font-size: 0.9rem;
+  color: #6a6a6a;
+  margin-bottom: 6px;
+}
+.picContainer .picViews {
+  font-size: 14px;
+  color: #6a6a6a;
+}
+.HD {
+  display: inline-block;
+  position: absolute;
+  bottom: 58px;
+  right: 8px;
+  font-size: 12px;
+}
+.HD strong {
+  font-weight: 900;
+}
+.videoAd {
+  grid-column: 4 / 6;
+  grid-row: 1 / 3;
+  align-self: center;
+  position: relative;
+}
+.videoAd video {
+  width: 280px;
+  margin-left: 8rem;
+  z-index: -1;
+}
+.videoAd .adMainText {
+  position: absolute;
+  display: block;
+  bottom: 18px;
+  right: 96px;
+  text-align: left;
+
+  font-size: 3rem;
+  background-color: #000;
+  color: #a50808;
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+  animation: blink-animation 1.5s steps(5, start) infinite;
+}
+.videoAd .removeAdLink {
+  position: relative;
+  bottom: 522px;
+  right: -345px;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+.videoAd .adBy {
+  position: relative;
+  right: -155px;
+  bottom: -5px;
+  font-size: 0.7rem;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+.pageNation {
+  text-align: center;
+  margin: -5rem 0 2rem;
+}
+.pageNation span {
+  background-color: #f90;
+  color: #000;
+  border: 1px solid black;
+  font-size: 1rem;
+  padding: 1.1rem 1.45rem;
+  font-weight: 700;
+  border-radius: 4px;
+}
+.pageDescription {
+  text-align: center;
+  font-size: 0.7rem;
+  color: #666;
+  line-height: 18px;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
